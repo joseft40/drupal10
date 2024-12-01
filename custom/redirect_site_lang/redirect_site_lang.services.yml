@@ -1,0 +1,6 @@
+services:
+  redirect_site_lang.language_redirect_middleware:
+    class: Drupal\redirect_site_lang\Middleware\LanguageRedirectMiddleware
+    arguments: ['@language_manager', '@path.current',  '@path_alias.manager', '@entity.repository', '@entity_type.manager']
+    tags:
+      - { name: http_middleware, priority: 50 }

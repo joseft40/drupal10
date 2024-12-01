@@ -1,0 +1,7 @@
+name: 'Language Redirect'
+type: module
+description: 'Redirige a los usuarios según el idioma del navegador y la disponibilidad de contenido.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:language
